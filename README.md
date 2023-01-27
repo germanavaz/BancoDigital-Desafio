@@ -12,6 +12,15 @@ Considerando o problema, foi interpretado o seguinte cenário:
 - O banco oferece aos seus clientes dois tipos de contas (**corrente e poupança**);
 - Possuem as funcionalidades de **depósito, saque e transferência** (entre contas da própria instituição);
 
+## Projeto
+
+- Interface **Conta** com os métodos: sacar, depositar, transferir e imprimir extrato;
+  - Sacar retorna o valor do saldo menos o valor sacado;
+  - Depositar retorna o valor do saldo mais o valor depositado; 
+  - Transferir retira o valor do saldo da conta que está transferindo e adiciona em outra;
+  - Imprimir extratos retorna o nome do titular da conta, número da conta, agência e saldo. 
+- Classe pai **Conta** com valores da agência, conta e saldo. Agência e conta implementados por números sequenciais automaticamente gerados a partir da criação de uma conta;
+
 ### Pilares da Orientação a objetos:
 
 - Abstração:
@@ -30,8 +39,6 @@ Permite que você defina uma classe filha que herda, estende ou modifica o compo
 
 Capacidade de um objeto poder ser referenciado de várias formas. 
 
-
-## Aprendizados
 
 
 
